@@ -1,19 +1,18 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2025-3-3        # Anger projektet du arbetar med
-#SBATCH -M snowy                  # Anger klustret (kan ändras om du arbetar på ett annat kluster)
-#SBATCH -p core                   # Anger vilken typ av partiton (core används för en vanlig partiton)
-#SBATCH -n 4                       # Antal CPU:er
-#SBATCH -t 06:00:00               # Maximerad körningstid (ändra om du behöver mer eller mindre tid)
-#SBATCH -J genome_assembly_pacbio # Jobbnamn för att identifiera jobbet i Slurm
-#SBATCH --mail-type=ALL           # Anger att du vill bli informerad via e-post vid olika tillfällen
-#SBATCH --mail-user sarina.emad.4348@student.uu.se # Din e-postadress
-#SBATCH --output=%x.%j.out        # Loggfilens namn (jobbnamn och jobbid)
+#SBATCH -A uppmax2025-3-3                                        
+#SBATCH -M snowy                  
+#SBATCH -p core                  
+#SBATCH -n 4                       
+#SBATCH -t 06:00:00               
+#SBATCH -J genome_assembly_pacbio 
+#SBATCH --mail-type=ALL           
+#SBATCH --mail-user sarina.emad.4348@student.uu.se 
+#SBATCH --output=%x.%j.out        
 
-# Ladda de nödvändiga modulerna
+
 module load bioinfo-tools
 module load canu
 
-# Canu-kommandot för att köra genomassemblage
 canu -p pacbio_assembly -d /home/saem4348/genomanalys/analyses/0_genome_assembly \
     genomeSize=3m \
     useGrid=False \
