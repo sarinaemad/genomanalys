@@ -1,2 +1,92 @@
-/analyses/
+# ========================
+# Raw sequencing data
+# ========================
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fasta
+*.fasta.gz
+*.fa
+*.fa.gz
 
+# ========================
+# Alignment / mapping files
+# ========================
+*.bam
+*.sam
+*.bai
+*.cram
+
+# ========================
+# Variant calling
+# ========================
+*.vcf
+*.vcf.gz
+*.bcf
+
+# ========================
+# Assembly output
+# ========================
+*.contigs
+*.scaffolds
+*.unplaced
+*.fai
+*.gfa
+
+# ========================
+# Annotation / GFF/GTF
+# ========================
+*.gff
+*.gff3
+*.gtf
+
+# ========================
+# Logs, results, intermediates
+# ========================
+*.log
+*.out
+*.err
+*.txt
+*.tsv
+*.csv
+*.rpt
+*.html
+
+# ========================
+# Soft links
+# ========================
+*.lnk
+*.symlink
+
+# ========================
+# Conda / Python / R junk
+# ========================
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.Rhistory
+.RData
+.Rproj.user/
+
+# ========================
+# Slurm / job output
+# ========================
+slurm-*.out
+*.e[0-9]*
+*.o[0-9]*
+
+# ========================
+# Misc
+# ========================
+*.tmp
+*.bak
+*~
+.DS_Store
+
+# ========================
+# Ignore all result/ and data/ folders if needed
+# ========================
+data/
+analyses/
