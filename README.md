@@ -1,4 +1,6 @@
-# Genome analysis proejct
+# Genome analysis project
+
+In this file, the pipeline and file organisation are written for the project based on paper 1 in the course Genome Analysis.
 
 ## Organisation
 I created directories for the organisation of my files. I created three directories in my genome analysis folder named "analyses", "code" and "data". In the analyses folder I saved all outputs for each analysis that I got from each tool in subfolder for each step: genome assembly, preprocessing, assembly evaluatiion, visualisation, annotation, RNA preprocessing, RNA mapping, read counting and differential expression. In the code folder I saved all batches with code that I wrote for each analysis. In the data folder, I saved all the data I had including the reads from PacBio, Nanopore and Illumina as well as the reference genome downloaded from NIH.
